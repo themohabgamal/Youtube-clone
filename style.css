@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@500&family=Ubuntu:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    align-items: center;
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left-section i {
+    cursor: pointer;
+}
+
+.left-section img {
+    width: 46%;
+    padding-left: 16px;
+}
+
+.mid-section {
+    display: flex;
+    align-items: center;
+    margin-left: -9%;
+}
+
+.mid-section form {
+    display: flex;
+    width: 632px;
+    height: 40px;
+}
+
+.mid-section input {
+    width: 100%;
+    border-radius: 2px 0 0 2px;
+    padding: 12px;
+    font-size: 1.6rem;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+}
+
+.mid-section button {
+    width: 64px;
+    border-radius: 0 2px 2px 0;
+    padding: 16px;
+    align-items: center;
+    display: flex;
+    border: 1px solid #d3d3d3;
+    border-left: none;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.mid-section button:hover {
+    background-color: gainsboro;
+}
+
+.mid-section .mic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.right-section a {
+    padding-right: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    background-color: #f9f9f9;
+    display: flex;
+    height: calc(100vh - 56px);
+
+}
+
+aside {
+    background-color: white;
+    height: 100%;
+    width: 280px;
+    overflow-y: auto;
+
+}
+
+aside nav {
+
+    display: flex;
+    height: 40px;
+    flex-direction: column;
+    width: 100%;
+    margin: 15px 0;
+    padding-right: 15px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links:hover {
+    background-color: #d3d3d3;
+}
+
+.nav-links span {
+    margin-left: 24px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2em;
+    color: #030303;
+
+}
+
+.active {
+    background-color: #d3d3d3;
+}
+
+#active {
+    font-weight: bold;
+}
+
+.nav-sub {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    color: #606060;
+}
+
+.nav-img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 35px 15px;
+    border-top: 1px solid #ddd;
+    scrollbar-width: thin;
+    overflow-y: auto;
+}
+
+.videos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video {
+    width: 330px;
+    margin-bottom: 40px;
+    cursor: pointer;
+
+}
+
+.thumbnail {
+    margin-bottom: 12px;
+    width: 100%;
+    height: 187px;
+}
+
+.thumbnail img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.video-details {
+    display: flex;
+}
+
+.creator-img img {
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-title {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    max-width: 278px;
+    margin-bottom: 4px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+
+}
+
+.video-creator {
+    text-decoration: none;
+    color: #606060;
+    font-size: 13px;
+}
+
+.title span {
+    color: #606060;
+    font-size: 11px;
+
+}
